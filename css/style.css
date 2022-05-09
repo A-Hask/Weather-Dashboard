@@ -1,0 +1,14 @@
+:root {
+    --primary-color: black;
+    --secondary-color: white;
+}
+
+header {
+    background-image: url("./weather-stock.jpg");
+    width: 100%;
+    text-align: center;
+    color: var(--primary-color);
+    -webkit-text-stroke: 1px var(--secondary-color);
+    font-size: xx-large;
+    padding: 10px;
+}
