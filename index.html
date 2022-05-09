@@ -13,19 +13,20 @@
         Weather Dashboard
     </h1>
 </header>
-<body>
+<body class="dashboard"> dashboard section
     <section class="city-search">
         <h2>Search for a City:</h2>
-        <input type="text" placeholder="Charleston, SC"></input>
+        <input type="text" placeholder="Charleston, SC" id="searched-city"></input>
+        <button class="btn">Search</button>
     </section>
-    <section class="saved-cities">
-
+    <section class="saved-cities" id="saved">
+        <h2>Favorite Cities</h2>
     </section>
-    <section class="current">
-
+    <section class="current-weather" id="current">
+        <h2>Current Weather</h2>
     </section>
-    <section class="forecast">
-
+    <section class="forecast" id="future">
+        <h2>Forecast</h2>
     </section>
 <script src="./js/script.js"></script>
 </body>

@@ -12,3 +12,24 @@ header {
     font-size: xx-large;
     padding: 10px;
 }
+.dashboard {
+    border: 2px --primary-color;
+}
+
+.city-search {
+
+}
+
+.btn {
+    
+}
+
+.saved-cities {
+
+}
+.current-weather {
+
+}
+.forecast {
+
+}
