@@ -23,7 +23,7 @@ searchBtn.on("click", function () {
               data[0].lat +
               "&lon=" +
               data[0].lon +
-              "&exclude=minutely,alerts&appid=cf435fe1ad8c50ef7b1fe99bc009900c"
+              "&units=imperial&appid=cf435fe1ad8c50ef7b1fe99bc009900c"
           ).then(function (response) {
             if (response.ok) {
               response.json().then(function (data) {

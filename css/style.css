@@ -15,6 +15,10 @@ header {
 .dashboard {
     border: 2px --primary-color;
 }
+.saved-cities {
+    list-style: none;
+}
+
 
 /* .city-search {
 
@@ -24,9 +28,6 @@ header {
     
 }
 
-.saved-cities {
-
-}
 .current-weather {
 
 }
