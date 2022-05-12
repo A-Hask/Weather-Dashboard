@@ -3,7 +3,7 @@ var searchBtn = $("#searchBtn");
 //set array for previously searched cities
 var savedCities = [];
 
-//fetch api for weather info
+//fetch api for city search and weather info
 searchBtn.on("click", function () {
   var searchedCity = $("#searched-city").val();
   fetch(
@@ -37,3 +37,12 @@ searchBtn.on("click", function () {
     }
   });
 });
+
+//save data to local storage
+
+//display previously searched cities. user must be able to click on cities to search again. 
+//list must not have repeats
+
+//display current weather (city, date, current temp, [hourly temp optional,] wind, humidity, UV index)
+
+//display 5-day weather forecast (date, weather icon, high temp, low temp, wind, humidity)
