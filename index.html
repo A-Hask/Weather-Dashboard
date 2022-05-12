@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,66 +14,12 @@
         Weather Dashboard
     </h1>
 </header>
-<body class="dashboard"> dashboard section
+
+<body class="dashboard">
     <section class="city-search">
-        <h2>Search for a City:</h2>
-        <input type="text" placeholder="Charleston, SC" id="searched-city"></input>
-        <label for="states">Choose a state:</label>
-        <select name="states-list" id="states">
-            <option value="default">Choose a state.</option>
-            <option value="alabama">Alabama (AL)</option>
-            <option value="alaska">Alaska (AK)</option>
-            <option value="arizona">Arizona (AZ)</option>
-            <option value="arkansas">Arkansas (AR)</option>
-            <option value="california">California (CA)</option>
-            <option value="colorado">Colorado (CO)</option>
-            <option value="connecticut">Connecticut (CT)</option>
-            <option value="delaware">Delaware (DE)</option>
-            <option value="dc">District of Columbia (DC)</option>
-            <option value="florida">Florida (FL)</option>
-            <option value="georgia">Georgia (GA)</option>
-            <option value="hawaii">Hawaii (HI)</option>
-            <option value="idaho">Idaho (ID)</option>
-            <option value="illinois">Illinois (IL)</option>
-            <option value="indiana">Indiana (IN)</option>
-            <option value="iowa">Iowa (IA)</option>
-            <option value="kansas">Kansas (KS)</option>
-            <option value="kentucky">Kentucky (KY)</option>
-            <option value="louisiana">Louisiana (LA)</option>
-            <option value="maine">Maine (ME)</option>
-            <option value="maryland">Maryland (MD)</option>
-            <option value="massachussets">Massachussets (MA)</option>
-            <option value="michigan">Michigan (MI)</option>
-            <option value="minnesota"> Minnesota (MN)</option>
-            <option value="mississippi">Mississippi (MS)</option>
-            <option value="missouri">Missouri (MO)</option>
-            <option value="montana"> Montana (MT)</option>
-            <option value="nebraska">Nebraska (NE)</option>
-            <option value="nevada">Nevada (NV)</option>
-            <option value="new-hampshire">New Hampshire (NH)</option>
-            <option value="new-jersey">New Jersey (NJ)</option>
-            <option value="new-mexico">New Mexico (NM)</option>
-            <option value="new-york">New York (NY)</option>
-            <option value="north-carolina">North Carolina (NC)</option>
-            <option value="north-dakota">North Dakota (ND)</option>
-            <option value="ohio">Ohio (OH)</option>
-            <option value="oklahoma">Oklahoma (OK)</option>
-            <option value="oregon">Oregon (OR)</option>
-            <option value="pennsylvania">Pennsylvania (PA)</option>
-            <option value="rhode-island">Rhode Island (RI)</option>
-            <option value="south-carolina">South Carolina (SC)</option>
-            <option value="south-dakota">South Dakota (SD)</option>
-            <option value="tennessee">Tennessee (TN)</option>
-            <option value="texas">Texas (TX)</option>
-            <option value="utah">Utah (UT)</option>
-            <option value="vermont">Vermont (VT)</option>
-            <option value="virgina">Virginia (VA)</option>
-            <option value="washington">Washington (WA)</option>
-            <option value="west-virginia">West Virginia (WV)</option>
-            <option value="wisconsin">Wisconsin (WI)</option>
-            <option value="wyoming">Wyoming (WY)</option>
-        </select>
-        <button class="btn">Search</button>
+        <h2>Search for any US city:</h2>
+        <input type="text" placeholder="Charleston" id="searched-city"></input>
+        <button class="search-btn" id="searchBtn">Search</button>
     </section>
     <section class="saved-cities" id="saved">
         <h2>Favorite Cities</h2>
@@ -83,6 +30,8 @@
     <section class="forecast" id="future">
         <h2>Forecast</h2>
     </section>
-<script src="./js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="./js/script.js"></script>
 </body>
+
 </html>
