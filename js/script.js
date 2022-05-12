@@ -26,7 +26,7 @@ searchBtn.on("click", function () {
         }).then(function () {
             fetch("https://api.openweathermap.org/data/2.5/onecall?lat=" + lat + "&lon=" + lon + "&appid=cf435fe1ad8c50ef7b1fe99bc009900c")
                 .then(function (response) {
-                    if (reponse.ok) {
+                    if (response.ok) {
                         response.json().then(function (data) {
                             console.log(data);
                         })
