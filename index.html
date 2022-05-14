@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>What's the Weather?</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
     <link rel='icon' type="img/png" href='./css/sun-icon.jpg'>
 </head>
@@ -19,18 +21,28 @@
     <section class="city-search">
         <h2>Search for any US city:</h2>
         <input type="text" placeholder="District of Columbia" id="searched-city">
-        <button class="search-btn" id="searchBtn">Search</button>
+        <button class="btn" id="searchBtn">Search</button>
     </section>
-    <section class="saved-cities" id="saved">
+    <section>
         <h2>Previously Searched Cities</h2>
-        <li></li>
+        <div class="saved-cities" id="saved">
+        </div>
+        <!-- to be fixed and added later -->
+        <!-- <button id="clear">Clear Search History</button> -->
     </section>
-    <section class="current-weather" id="current">
-        <h2>Current Weather</h2>
+    <section class="container">
+        <h1>Weather Information</h1>
+        <section class="current-weather card" style="width:auto">
+            <h2 class="card-title"> Current Weather</h2>
+            <div class="card-body col-12" id="current"></div>
+        </section>
+        <section class="forecast card" style="width:auto">
+            <h2 class="card-title"> Forecast</h2>
+            <h3 class="card-subtitle mb-2">See what the next five days will look like in: </h3>
+            <div class="card-body card-text" id="future"></div>
+        </section>
     </section>
-    <section class="forecast" id="future">
-        <h2>Forecast</h2>
-    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://unpkg.com/dayjs@1.8.21/dayjs.min.js"></script>
     <script>
