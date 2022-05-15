@@ -13,12 +13,13 @@
 </head>
 <header>
     <h1>
-        Weather Dashboard
+        WEATHER DASHBOARD
     </h1>
 </header>
 
 <body class="dashboard">
     <section class="city-search">
+        <br>
         <h2>Search for any US city:</h2>
         <input type="text" placeholder="District of Columbia" id="searched-city">
         <button class="btn" id="searchBtn">Search</button>
@@ -27,19 +28,21 @@
         <h2>Previously Searched Cities</h2>
         <div class="saved-cities" id="saved">
         </div>
-        <!-- to be fixed and added later -->
+        <!-- to be added later -->
         <!-- <button id="clear">Clear Search History</button> -->
     </section>
     <section class="container">
         <h1>Weather Information</h1>
-        <section class="current-weather card" style="width:auto">
-            <h2 class="card-title"> Current Weather</h2>
-            <div class="card-body col-12" id="current"></div>
-        </section>
-        <section class="forecast card" style="width:auto">
-            <h2 class="card-title"> Forecast</h2>
-            <h3 class="card-subtitle mb-2">See what the next five days will look like in: </h3>
-            <div class="card-body card-text" id="future"></div>
+        <section class="weather">
+            <div>
+                <h2 class="card-title"> Current Weather</h2>
+                <div class="card-body col-12" id="current"></div><hr>
+            </div>
+            <div>
+                <h2 class="card-title"> Forecast</h2>
+                <h3 class="card-subtitle mb-2">See what the next five days will look like in: </h3>
+                <div class="card-body card-text" id="future"></div>
+            </div>
         </section>
     </section>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
@@ -50,5 +53,8 @@
     </script>
     <script src="./js/script.js"></script>
 </body>
+<footer>
+    Note: For the UV Index, a green background means favorable, a yellow background means moderate, and a red background means severe.
+</footer>
 
 </html>

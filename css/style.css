@@ -2,9 +2,15 @@
     --primary-color: black;
     --secondary-color: white;
 }
+
 * {
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+
+h1 {
+    font-weight: bold;
+}
+
 
 header {
     background-image: url("./weather-stock.jpg");
@@ -15,12 +21,19 @@ header {
     font-size: xx-large;
     padding: 10px;
 }
+
+body {
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
 .dashboard {
     border: 2px --primary-color;
 }
+
 .saved-cities,
-.current-weather,
-.forecast {
+.weather {
     list-style: none;
 }
 
@@ -46,11 +59,7 @@ header {
     color: white;
 }
 
-
-
-/*Style to be added later*/
-/* .city-search {
-
+footer {
+    text-align: center;
+    margin-bottom: 6px;
 }
-
- */
